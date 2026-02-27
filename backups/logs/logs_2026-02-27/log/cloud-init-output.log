@@ -1,0 +1,492 @@
+Cloud-init v. 25.2 running 'init-local' at Thu, 04 Dec 2025 14:51:00 +0000. Up 16.03 seconds.
+Cloud-init v. 25.2 running 'init' at Thu, 04 Dec 2025 14:51:02 +0000. Up 18.66 seconds.
+ci-info: +++++++++++++++++++++++++++Net device info++++++++++++++++++++++++++++
+ci-info: +--------+-------+-----------+-----------+-------+-------------------+
+ci-info: | Device |   Up  |  Address  |    Mask   | Scope |     Hw-Address    |
+ci-info: +--------+-------+-----------+-----------+-------+-------------------+
+ci-info: |  eth0  | False |     .     |     .     |   .   | d8:3a:dd:39:2b:b7 |
+ci-info: |   lo   |  True | 127.0.0.1 | 255.0.0.0 |  host |         .         |
+ci-info: |   lo   |  True |  ::1/128  |     .     |  host |         .         |
+ci-info: | wlan0  | False |     .     |     .     |   .   | d8:3a:dd:39:2b:b9 |
+ci-info: +--------+-------+-----------+-----------+-------+-------------------+
+ci-info: +++++++++++++++++++Route IPv6 info+++++++++++++++++++
+ci-info: +-------+-------------+---------+-----------+-------+
+ci-info: | Route | Destination | Gateway | Interface | Flags |
+ci-info: +-------+-------------+---------+-----------+-------+
+ci-info: +-------+-------------+---------+-----------+-------+
+Cloud-init v. 25.2 running 'modules:config' at Thu, 04 Dec 2025 14:51:23 +0000. Up 39.67 seconds.
+Received signal 15 resulting in exit. Cause:
+  Filename: /usr/lib/python3/dist-packages/cloudinit/socket.py
+  Function: __enter__
+  Line number: 119
+    Filename: /usr/lib/python3/dist-packages/cloudinit/cmd/main.py
+    Function: all_stages
+    Line number: 1343
+      Filename: /usr/lib/python3/dist-packages/cloudinit/cmd/main.py
+      Function: main
+      Line number: 1305
+Cloud-init v. 25.2 running 'init-local' at Thu, 04 Dec 2025 14:50:56 +0000. Up 7.25 seconds.
+Cloud-init v. 25.2 running 'init' at Thu, 04 Dec 2025 14:50:57 +0000. Up 7.78 seconds.
+ci-info: +++++++++++++++++++++++++++Net device info++++++++++++++++++++++++++++
+ci-info: +--------+-------+-----------+-----------+-------+-------------------+
+ci-info: | Device |   Up  |  Address  |    Mask   | Scope |     Hw-Address    |
+ci-info: +--------+-------+-----------+-----------+-------+-------------------+
+ci-info: |  eth0  | False |     .     |     .     |   .   | d8:3a:dd:39:2b:b7 |
+ci-info: |   lo   |  True | 127.0.0.1 | 255.0.0.0 |  host |         .         |
+ci-info: |   lo   |  True |  ::1/128  |     .     |  host |         .         |
+ci-info: | wlan0  | False |     .     |     .     |   .   | d8:3a:dd:39:2b:b9 |
+ci-info: +--------+-------+-----------+-----------+-------+-------------------+
+ci-info: +++++++++++++++++++Route IPv6 info+++++++++++++++++++
+ci-info: +-------+-------------+---------+-----------+-------+
+ci-info: | Route | Destination | Gateway | Interface | Flags |
+ci-info: +-------+-------------+---------+-----------+-------+
+ci-info: +-------+-------------+---------+-----------+-------+
+Cloud-init v. 25.2 running 'modules:config' at Thu, 04 Dec 2025 14:51:10 +0000. Up 21.32 seconds.
+Cloud-init v. 25.2 running 'modules:final' at Thu, 04 Dec 2025 14:51:11 +0000. Up 21.62 seconds.
+2025-12-04 14:51:11,261 - modules.py[WARNING]: Could not find module named cc_netplan_nm_patch (searched ['cc_netplan_nm_patch', 'cloudinit.config.cc_netplan_nm_patch'])
+Get:1 http://archive.raspberrypi.com/debian trixie InRelease [54.8 kB]
+Hit:2 http://deb.debian.org/debian trixie InRelease
+Get:3 http://deb.debian.org/debian trixie-updates InRelease [47.3 kB]
+Err:3 http://deb.debian.org/debian trixie-updates InRelease
+  Sub-process /usr/bin/sqv returned an error code (1), error message is: Verifying signature:            Not live until 2026-01-09T08:09:27Z Verifying signature:            Not live until 2026-01-09T08:09:49Z
+Get:4 http://deb.debian.org/debian-security trixie-security InRelease [43.4 kB]
+Err:1 http://archive.raspberrypi.com/debian trixie InRelease
+  Sub-process /usr/bin/sqv returned an error code (1), error message is: Verifying signature:            Not live until 2026-01-09T06:16:43Z
+Err:4 http://deb.debian.org/debian-security trixie-security InRelease
+  Sub-process /usr/bin/sqv returned an error code (1), error message is: Verifying signature:            Not live until 2026-01-08T19:53:21Z Verifying signature:            Not live until 2026-01-08T19:53:21Z
+Fetched 146 kB in 1s (103 kB/s)
+Reading package lists...
+W: An error occurred during the signature verification. The repository is not updated and the previous index files will be used. OpenPGP signature verification failed: http://deb.debian.org/debian trixie-updates InRelease: Sub-process /usr/bin/sqv returned an error code (1), error message is: Verifying signature:            Not live until 2026-01-09T08:09:27Z Verifying signature:            Not live until 2026-01-09T08:09:49Z
+W: An error occurred during the signature verification. The repository is not updated and the previous index files will be used. OpenPGP signature verification failed: http://archive.raspberrypi.com/debian trixie InRelease: Sub-process /usr/bin/sqv returned an error code (1), error message is: Verifying signature:            Not live until 2026-01-09T06:16:43Z
+W: An error occurred during the signature verification. The repository is not updated and the previous index files will be used. OpenPGP signature verification failed: http://deb.debian.org/debian-security trixie-security InRelease: Sub-process /usr/bin/sqv returned an error code (1), error message is: Verifying signature:            Not live until 2026-01-08T19:53:21Z Verifying signature:            Not live until 2026-01-08T19:53:21Z
+W: Failed to fetch http://deb.debian.org/debian/dists/trixie-updates/InRelease  Sub-process /usr/bin/sqv returned an error code (1), error message is: Verifying signature:            Not live until 2026-01-09T08:09:27Z Verifying signature:            Not live until 2026-01-09T08:09:49Z
+W: Failed to fetch http://deb.debian.org/debian-security/dists/trixie-security/InRelease  Sub-process /usr/bin/sqv returned an error code (1), error message is: Verifying signature:            Not live until 2026-01-08T19:53:21Z Verifying signature:            Not live until 2026-01-08T19:53:21Z
+W: Failed to fetch http://archive.raspberrypi.com/debian/dists/trixie/InRelease  Sub-process /usr/bin/sqv returned an error code (1), error message is: Verifying signature:            Not live until 2026-01-09T06:16:43Z
+W: Some index files failed to download. They have been ignored, or old ones used instead.
+Reading package lists...
+Building dependency tree...
+Reading state information...
+avahi-daemon is already the newest version (0.8-16).
+0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+Cloud-init v. 25.2 finished at Fri, 09 Jan 2026 11:12:44 +0000. Datasource DataSourceNoCloud [seed=ds_config_seedfrom,file:///boot/firmware].  Up 40.21 seconds
+Cloud-init v. 25.2 running 'init-local' at Fri, 09 Jan 2026 11:15:59 +0000. Up 8.08 seconds.
+Cloud-init v. 25.2 running 'init' at Fri, 09 Jan 2026 11:15:59 +0000. Up 8.46 seconds.
+ci-info: +++++++++++++++++++++++++++Net device info++++++++++++++++++++++++++++
+ci-info: +--------+-------+-----------+-----------+-------+-------------------+
+ci-info: | Device |   Up  |  Address  |    Mask   | Scope |     Hw-Address    |
+ci-info: +--------+-------+-----------+-----------+-------+-------------------+
+ci-info: |  eth0  | False |     .     |     .     |   .   | d8:3a:dd:39:2b:b7 |
+ci-info: |   lo   |  True | 127.0.0.1 | 255.0.0.0 |  host |         .         |
+ci-info: |   lo   |  True |  ::1/128  |     .     |  host |         .         |
+ci-info: | wlan0  | False |     .     |     .     |   .   | d8:3a:dd:39:2b:b9 |
+ci-info: +--------+-------+-----------+-----------+-------+-------------------+
+ci-info: +++++++++++++++++++Route IPv6 info+++++++++++++++++++
+ci-info: +-------+-------------+---------+-----------+-------+
+ci-info: | Route | Destination | Gateway | Interface | Flags |
+ci-info: +-------+-------------+---------+-----------+-------+
+ci-info: +-------+-------------+---------+-----------+-------+
+Cloud-init v. 25.2 running 'modules:config' at Fri, 09 Jan 2026 11:16:14 +0000. Up 22.88 seconds.
+Cloud-init v. 25.2 running 'modules:final' at Fri, 09 Jan 2026 11:16:14 +0000. Up 23.12 seconds.
+2026-01-09 11:16:14,706 - modules.py[WARNING]: Could not find module named cc_netplan_nm_patch (searched ['cc_netplan_nm_patch', 'cloudinit.config.cc_netplan_nm_patch'])
+Cloud-init v. 25.2 finished at Fri, 09 Jan 2026 11:16:14 +0000. Datasource DataSourceNoCloud [seed=ds_config_seedfrom,file:///boot/firmware].  Up 23.28 seconds
+Cloud-init v. 25.2 running 'init-local' at Fri, 09 Jan 2026 11:18:51 +0000. Up 7.03 seconds.
+Cloud-init v. 25.2 running 'init' at Fri, 09 Jan 2026 11:18:51 +0000. Up 7.41 seconds.
+ci-info: +++++++++++++++++++++++++++Net device info++++++++++++++++++++++++++++
+ci-info: +--------+-------+-----------+-----------+-------+-------------------+
+ci-info: | Device |   Up  |  Address  |    Mask   | Scope |     Hw-Address    |
+ci-info: +--------+-------+-----------+-----------+-------+-------------------+
+ci-info: |  eth0  | False |     .     |     .     |   .   | d8:3a:dd:39:2b:b7 |
+ci-info: |   lo   |  True | 127.0.0.1 | 255.0.0.0 |  host |         .         |
+ci-info: |   lo   |  True |  ::1/128  |     .     |  host |         .         |
+ci-info: | wlan0  | False |     .     |     .     |   .   | d8:3a:dd:39:2b:b9 |
+ci-info: +--------+-------+-----------+-----------+-------+-------------------+
+ci-info: +++++++++++++++++++Route IPv6 info+++++++++++++++++++
+ci-info: +-------+-------------+---------+-----------+-------+
+ci-info: | Route | Destination | Gateway | Interface | Flags |
+ci-info: +-------+-------------+---------+-----------+-------+
+ci-info: +-------+-------------+---------+-----------+-------+
+Cloud-init v. 25.2 running 'modules:config' at Fri, 09 Jan 2026 11:19:04 +0000. Up 20.39 seconds.
+Cloud-init v. 25.2 running 'modules:final' at Fri, 09 Jan 2026 11:19:04 +0000. Up 20.66 seconds.
+2026-01-09 11:19:05,089 - modules.py[WARNING]: Could not find module named cc_netplan_nm_patch (searched ['cc_netplan_nm_patch', 'cloudinit.config.cc_netplan_nm_patch'])
+Cloud-init v. 25.2 finished at Fri, 09 Jan 2026 11:19:05 +0000. Datasource DataSourceNoCloud [seed=ds_config_seedfrom,file:///boot/firmware].  Up 20.91 seconds
+Cloud-init v. 25.2 running 'init-local' at Fri, 09 Jan 2026 11:33:25 +0000. Up 7.72 seconds.
+Cloud-init v. 25.2 running 'init' at Fri, 09 Jan 2026 11:33:26 +0000. Up 8.09 seconds.
+ci-info: +++++++++++++++++++++++++++Net device info++++++++++++++++++++++++++++
+ci-info: +--------+-------+-----------+-----------+-------+-------------------+
+ci-info: | Device |   Up  |  Address  |    Mask   | Scope |     Hw-Address    |
+ci-info: +--------+-------+-----------+-----------+-------+-------------------+
+ci-info: |  eth0  | False |     .     |     .     |   .   | d8:3a:dd:39:2b:b7 |
+ci-info: |   lo   |  True | 127.0.0.1 | 255.0.0.0 |  host |         .         |
+ci-info: |   lo   |  True |  ::1/128  |     .     |  host |         .         |
+ci-info: | wlan0  | False |     .     |     .     |   .   | d8:3a:dd:39:2b:b9 |
+ci-info: +--------+-------+-----------+-----------+-------+-------------------+
+ci-info: +++++++++++++++++++Route IPv6 info+++++++++++++++++++
+ci-info: +-------+-------------+---------+-----------+-------+
+ci-info: | Route | Destination | Gateway | Interface | Flags |
+ci-info: +-------+-------------+---------+-----------+-------+
+ci-info: +-------+-------------+---------+-----------+-------+
+Cloud-init v. 25.2 running 'modules:config' at Fri, 09 Jan 2026 11:33:38 +0000. Up 20.68 seconds.
+Cloud-init v. 25.2 running 'modules:final' at Fri, 09 Jan 2026 11:33:39 +0000. Up 20.91 seconds.
+2026-01-09 11:33:39,292 - modules.py[WARNING]: Could not find module named cc_netplan_nm_patch (searched ['cc_netplan_nm_patch', 'cloudinit.config.cc_netplan_nm_patch'])
+Cloud-init v. 25.2 finished at Fri, 09 Jan 2026 11:33:39 +0000. Datasource DataSourceNoCloud [seed=ds_config_seedfrom,file:///boot/firmware].  Up 21.06 seconds
+Cloud-init v. 25.2 running 'init-local' at Fri, 09 Jan 2026 11:54:31 +0000. Up 7.33 seconds.
+Cloud-init v. 25.2 running 'init' at Fri, 09 Jan 2026 11:54:32 +0000. Up 7.72 seconds.
+ci-info: +++++++++++++++++++++++++++Net device info++++++++++++++++++++++++++++
+ci-info: +--------+-------+-----------+-----------+-------+-------------------+
+ci-info: | Device |   Up  |  Address  |    Mask   | Scope |     Hw-Address    |
+ci-info: +--------+-------+-----------+-----------+-------+-------------------+
+ci-info: |  eth0  | False |     .     |     .     |   .   | d8:3a:dd:39:2b:b7 |
+ci-info: |   lo   |  True | 127.0.0.1 | 255.0.0.0 |  host |         .         |
+ci-info: |   lo   |  True |  ::1/128  |     .     |  host |         .         |
+ci-info: | wlan0  | False |     .     |     .     |   .   | d8:3a:dd:39:2b:b9 |
+ci-info: +--------+-------+-----------+-----------+-------+-------------------+
+ci-info: +++++++++++++++++++Route IPv6 info+++++++++++++++++++
+ci-info: +-------+-------------+---------+-----------+-------+
+ci-info: | Route | Destination | Gateway | Interface | Flags |
+ci-info: +-------+-------------+---------+-----------+-------+
+ci-info: +-------+-------------+---------+-----------+-------+
+Cloud-init v. 25.2 running 'modules:config' at Fri, 09 Jan 2026 11:55:37 +0000. Up 73.54 seconds.
+Cloud-init v. 25.2 running 'modules:final' at Fri, 09 Jan 2026 11:55:38 +0000. Up 73.73 seconds.
+2026-01-09 11:55:38,134 - modules.py[WARNING]: Could not find module named cc_netplan_nm_patch (searched ['cc_netplan_nm_patch', 'cloudinit.config.cc_netplan_nm_patch'])
+Cloud-init v. 25.2 finished at Fri, 09 Jan 2026 11:55:38 +0000. Datasource DataSourceNoCloud [seed=ds_config_seedfrom,file:///boot/firmware].  Up 73.84 seconds
+Cloud-init v. 25.2 running 'init-local' at Fri, 16 Jan 2026 12:24:38 +0000. Up 6.77 seconds.
+Cloud-init v. 25.2 running 'init' at Fri, 16 Jan 2026 12:24:39 +0000. Up 7.16 seconds.
+ci-info: +++++++++++++++++++++++++++Net device info++++++++++++++++++++++++++++
+ci-info: +--------+-------+-----------+-----------+-------+-------------------+
+ci-info: | Device |   Up  |  Address  |    Mask   | Scope |     Hw-Address    |
+ci-info: +--------+-------+-----------+-----------+-------+-------------------+
+ci-info: |  eth0  | False |     .     |     .     |   .   | d8:3a:dd:39:2b:b7 |
+ci-info: |   lo   |  True | 127.0.0.1 | 255.0.0.0 |  host |         .         |
+ci-info: |   lo   |  True |  ::1/128  |     .     |  host |         .         |
+ci-info: | wlan0  | False |     .     |     .     |   .   | d8:3a:dd:39:2b:b9 |
+ci-info: +--------+-------+-----------+-----------+-------+-------------------+
+ci-info: +++++++++++++++++++Route IPv6 info+++++++++++++++++++
+ci-info: +-------+-------------+---------+-----------+-------+
+ci-info: | Route | Destination | Gateway | Interface | Flags |
+ci-info: +-------+-------------+---------+-----------+-------+
+ci-info: +-------+-------------+---------+-----------+-------+
+Cloud-init v. 25.2 running 'modules:config' at Fri, 16 Jan 2026 12:24:51 +0000. Up 19.30 seconds.
+Received signal 15 resulting in exit. Cause:
+  Filename: /usr/lib/python3/dist-packages/cloudinit/socket.py
+  Function: __enter__
+  Line number: 119
+    Filename: /usr/lib/python3/dist-packages/cloudinit/cmd/main.py
+    Function: all_stages
+    Line number: 1343
+      Filename: /usr/lib/python3/dist-packages/cloudinit/cmd/main.py
+      Function: main
+      Line number: 1305
+Cloud-init v. 25.2 running 'init-local' at Fri, 23 Jan 2026 11:59:56 +0000. Up 7.29 seconds.
+Cloud-init v. 25.2 running 'init' at Fri, 23 Jan 2026 11:59:56 +0000. Up 7.68 seconds.
+ci-info: +++++++++++++++++++++++++++Net device info++++++++++++++++++++++++++++
+ci-info: +--------+-------+-----------+-----------+-------+-------------------+
+ci-info: | Device |   Up  |  Address  |    Mask   | Scope |     Hw-Address    |
+ci-info: +--------+-------+-----------+-----------+-------+-------------------+
+ci-info: |  eth0  | False |     .     |     .     |   .   | d8:3a:dd:39:2b:b7 |
+ci-info: |   lo   |  True | 127.0.0.1 | 255.0.0.0 |  host |         .         |
+ci-info: |   lo   |  True |  ::1/128  |     .     |  host |         .         |
+ci-info: | wlan0  | False |     .     |     .     |   .   | d8:3a:dd:39:2b:b9 |
+ci-info: +--------+-------+-----------+-----------+-------+-------------------+
+ci-info: +++++++++++++++++++Route IPv6 info+++++++++++++++++++
+ci-info: +-------+-------------+---------+-----------+-------+
+ci-info: | Route | Destination | Gateway | Interface | Flags |
+ci-info: +-------+-------------+---------+-----------+-------+
+ci-info: +-------+-------------+---------+-----------+-------+
+Cloud-init v. 25.2 running 'modules:config' at Fri, 23 Jan 2026 12:00:09 +0000. Up 20.73 seconds.
+Received signal 15 resulting in exit. Cause:
+  Filename: /usr/lib/python3/dist-packages/cloudinit/socket.py
+  Function: __enter__
+  Line number: 119
+    Filename: /usr/lib/python3/dist-packages/cloudinit/cmd/main.py
+    Function: all_stages
+    Line number: 1343
+      Filename: /usr/lib/python3/dist-packages/cloudinit/cmd/main.py
+      Function: main
+      Line number: 1305
+Cloud-init v. 25.2 running 'init-local' at Mon, 26 Jan 2026 16:21:36 +0000. Up 7.88 seconds.
+Cloud-init v. 25.2 running 'init' at Mon, 26 Jan 2026 16:21:37 +0000. Up 8.25 seconds.
+ci-info: +++++++++++++++++++++++++++Net device info++++++++++++++++++++++++++++
+ci-info: +--------+-------+-----------+-----------+-------+-------------------+
+ci-info: | Device |   Up  |  Address  |    Mask   | Scope |     Hw-Address    |
+ci-info: +--------+-------+-----------+-----------+-------+-------------------+
+ci-info: |  eth0  | False |     .     |     .     |   .   | d8:3a:dd:39:2b:b7 |
+ci-info: |   lo   |  True | 127.0.0.1 | 255.0.0.0 |  host |         .         |
+ci-info: |   lo   |  True |  ::1/128  |     .     |  host |         .         |
+ci-info: | wlan0  | False |     .     |     .     |   .   | d8:3a:dd:39:2b:b9 |
+ci-info: +--------+-------+-----------+-----------+-------+-------------------+
+ci-info: +++++++++++++++++++Route IPv6 info+++++++++++++++++++
+ci-info: +-------+-------------+---------+-----------+-------+
+ci-info: | Route | Destination | Gateway | Interface | Flags |
+ci-info: +-------+-------------+---------+-----------+-------+
+ci-info: +-------+-------------+---------+-----------+-------+
+Cloud-init v. 25.2 running 'modules:config' at Mon, 26 Jan 2026 16:21:49 +0000. Up 20.73 seconds.
+Received signal 15 resulting in exit. Cause:
+  Filename: /usr/lib/python3/dist-packages/cloudinit/socket.py
+  Function: __enter__
+  Line number: 119
+    Filename: /usr/lib/python3/dist-packages/cloudinit/cmd/main.py
+    Function: all_stages
+    Line number: 1343
+      Filename: /usr/lib/python3/dist-packages/cloudinit/cmd/main.py
+      Function: main
+      Line number: 1305
+Cloud-init v. 25.2 running 'init-local' at Mon, 26 Jan 2026 20:47:35 +0000. Up 7.87 seconds.
+Cloud-init v. 25.2 running 'init' at Mon, 26 Jan 2026 20:47:35 +0000. Up 8.24 seconds.
+ci-info: +++++++++++++++++++++++++++Net device info++++++++++++++++++++++++++++
+ci-info: +--------+-------+-----------+-----------+-------+-------------------+
+ci-info: | Device |   Up  |  Address  |    Mask   | Scope |     Hw-Address    |
+ci-info: +--------+-------+-----------+-----------+-------+-------------------+
+ci-info: |  eth0  | False |     .     |     .     |   .   | d8:3a:dd:39:2b:b7 |
+ci-info: |   lo   |  True | 127.0.0.1 | 255.0.0.0 |  host |         .         |
+ci-info: |   lo   |  True |  ::1/128  |     .     |  host |         .         |
+ci-info: | wlan0  | False |     .     |     .     |   .   | d8:3a:dd:39:2b:b9 |
+ci-info: +--------+-------+-----------+-----------+-------+-------------------+
+ci-info: +++++++++++++++++++Route IPv6 info+++++++++++++++++++
+ci-info: +-------+-------------+---------+-----------+-------+
+ci-info: | Route | Destination | Gateway | Interface | Flags |
+ci-info: +-------+-------------+---------+-----------+-------+
+ci-info: +-------+-------------+---------+-----------+-------+
+Cloud-init v. 25.2 running 'modules:config' at Mon, 26 Jan 2026 20:47:48 +0000. Up 20.70 seconds.
+Cloud-init v. 25.2 running 'modules:final' at Mon, 26 Jan 2026 20:52:15 +0000. Up 287.51 seconds.
+2026-01-26 20:52:15,255 - modules.py[WARNING]: Could not find module named cc_netplan_nm_patch (searched ['cc_netplan_nm_patch', 'cloudinit.config.cc_netplan_nm_patch'])
+Cloud-init v. 25.2 finished at Mon, 26 Jan 2026 20:52:15 +0000. Datasource DataSourceNoCloud [seed=ds_config_seedfrom,file:///boot/firmware].  Up 287.67 seconds
+Cloud-init v. 25.2 running 'init-local' at Mon, 02 Feb 2026 19:14:01 +0000. Up 7.11 seconds.
+Cloud-init v. 25.2 running 'init' at Mon, 02 Feb 2026 19:14:01 +0000. Up 7.49 seconds.
+ci-info: +++++++++++++++++++++++++++Net device info++++++++++++++++++++++++++++
+ci-info: +--------+-------+-----------+-----------+-------+-------------------+
+ci-info: | Device |   Up  |  Address  |    Mask   | Scope |     Hw-Address    |
+ci-info: +--------+-------+-----------+-----------+-------+-------------------+
+ci-info: |  eth0  | False |     .     |     .     |   .   | d8:3a:dd:39:2b:b7 |
+ci-info: |   lo   |  True | 127.0.0.1 | 255.0.0.0 |  host |         .         |
+ci-info: |   lo   |  True |  ::1/128  |     .     |  host |         .         |
+ci-info: | wlan0  | False |     .     |     .     |   .   | d8:3a:dd:39:2b:b9 |
+ci-info: +--------+-------+-----------+-----------+-------+-------------------+
+ci-info: +++++++++++++++++++Route IPv6 info+++++++++++++++++++
+ci-info: +-------+-------------+---------+-----------+-------+
+ci-info: | Route | Destination | Gateway | Interface | Flags |
+ci-info: +-------+-------------+---------+-----------+-------+
+ci-info: +-------+-------------+---------+-----------+-------+
+Cloud-init v. 25.2 running 'modules:config' at Mon, 02 Feb 2026 19:14:13 +0000. Up 19.20 seconds.
+Cloud-init v. 25.2 running 'modules:final' at Mon, 02 Feb 2026 19:14:13 +0000. Up 19.57 seconds.
+2026-02-02 19:14:13,923 - modules.py[WARNING]: Could not find module named cc_netplan_nm_patch (searched ['cc_netplan_nm_patch', 'cloudinit.config.cc_netplan_nm_patch'])
+Cloud-init v. 25.2 finished at Mon, 02 Feb 2026 19:14:14 +0000. Datasource DataSourceNoCloud [seed=ds_config_seedfrom,file:///boot/firmware].  Up 19.81 seconds
+Cloud-init v. 25.2 running 'init-local' at Thu, 05 Feb 2026 16:50:39 +0000. Up 6.87 seconds.
+Cloud-init v. 25.2 running 'init' at Thu, 05 Feb 2026 16:50:40 +0000. Up 7.27 seconds.
+ci-info: +++++++++++++++++++++++++++Net device info++++++++++++++++++++++++++++
+ci-info: +--------+-------+-----------+-----------+-------+-------------------+
+ci-info: | Device |   Up  |  Address  |    Mask   | Scope |     Hw-Address    |
+ci-info: +--------+-------+-----------+-----------+-------+-------------------+
+ci-info: |  eth0  | False |     .     |     .     |   .   | d8:3a:dd:39:2b:b7 |
+ci-info: |   lo   |  True | 127.0.0.1 | 255.0.0.0 |  host |         .         |
+ci-info: |   lo   |  True |  ::1/128  |     .     |  host |         .         |
+ci-info: | wlan0  | False |     .     |     .     |   .   | d8:3a:dd:39:2b:b9 |
+ci-info: +--------+-------+-----------+-----------+-------+-------------------+
+ci-info: +++++++++++++++++++Route IPv6 info+++++++++++++++++++
+ci-info: +-------+-------------+---------+-----------+-------+
+ci-info: | Route | Destination | Gateway | Interface | Flags |
+ci-info: +-------+-------------+---------+-----------+-------+
+ci-info: +-------+-------------+---------+-----------+-------+
+Cloud-init v. 25.2 running 'modules:config' at Thu, 05 Feb 2026 16:50:51 +0000. Up 19.02 seconds.
+Cloud-init v. 25.2 running 'modules:final' at Thu, 05 Feb 2026 16:50:52 +0000. Up 19.55 seconds.
+2026-02-05 16:50:52,565 - modules.py[WARNING]: Could not find module named cc_netplan_nm_patch (searched ['cc_netplan_nm_patch', 'cloudinit.config.cc_netplan_nm_patch'])
+Cloud-init v. 25.2 finished at Thu, 05 Feb 2026 16:50:52 +0000. Datasource DataSourceNoCloud [seed=ds_config_seedfrom,file:///boot/firmware].  Up 19.68 seconds
+Cloud-init v. 25.2 running 'init-local' at Fri, 06 Feb 2026 11:45:20 +0000. Up 7.21 seconds.
+Cloud-init v. 25.2 running 'init' at Fri, 06 Feb 2026 11:45:21 +0000. Up 7.59 seconds.
+ci-info: +++++++++++++++++++++++++++Net device info++++++++++++++++++++++++++++
+ci-info: +--------+-------+-----------+-----------+-------+-------------------+
+ci-info: | Device |   Up  |  Address  |    Mask   | Scope |     Hw-Address    |
+ci-info: +--------+-------+-----------+-----------+-------+-------------------+
+ci-info: |  eth0  | False |     .     |     .     |   .   | d8:3a:dd:39:2b:b7 |
+ci-info: |   lo   |  True | 127.0.0.1 | 255.0.0.0 |  host |         .         |
+ci-info: |   lo   |  True |  ::1/128  |     .     |  host |         .         |
+ci-info: | wlan0  | False |     .     |     .     |   .   | d8:3a:dd:39:2b:b9 |
+ci-info: +--------+-------+-----------+-----------+-------+-------------------+
+ci-info: +++++++++++++++++++Route IPv6 info+++++++++++++++++++
+ci-info: +-------+-------------+---------+-----------+-------+
+ci-info: | Route | Destination | Gateway | Interface | Flags |
+ci-info: +-------+-------------+---------+-----------+-------+
+ci-info: +-------+-------------+---------+-----------+-------+
+Cloud-init v. 25.2 running 'modules:config' at Fri, 06 Feb 2026 11:45:32 +0000. Up 19.35 seconds.
+Cloud-init v. 25.2 running 'modules:final' at Fri, 06 Feb 2026 11:45:33 +0000. Up 20.12 seconds.
+2026-02-06 11:45:33,728 - modules.py[WARNING]: Could not find module named cc_netplan_nm_patch (searched ['cc_netplan_nm_patch', 'cloudinit.config.cc_netplan_nm_patch'])
+Cloud-init v. 25.2 finished at Fri, 06 Feb 2026 11:45:33 +0000. Datasource DataSourceNoCloud [seed=ds_config_seedfrom,file:///boot/firmware].  Up 20.26 seconds
+Cloud-init v. 25.2 running 'init-local' at Fri, 20 Feb 2026 12:07:27 +0000. Up 7.11 seconds.
+Cloud-init v. 25.2 running 'init' at Fri, 20 Feb 2026 12:07:27 +0000. Up 7.48 seconds.
+ci-info: +++++++++++++++++++++++++++Net device info++++++++++++++++++++++++++++
+ci-info: +--------+-------+-----------+-----------+-------+-------------------+
+ci-info: | Device |   Up  |  Address  |    Mask   | Scope |     Hw-Address    |
+ci-info: +--------+-------+-----------+-----------+-------+-------------------+
+ci-info: |  eth0  | False |     .     |     .     |   .   | d8:3a:dd:39:2b:b7 |
+ci-info: |   lo   |  True | 127.0.0.1 | 255.0.0.0 |  host |         .         |
+ci-info: |   lo   |  True |  ::1/128  |     .     |  host |         .         |
+ci-info: | wlan0  | False |     .     |     .     |   .   | d8:3a:dd:39:2b:b9 |
+ci-info: +--------+-------+-----------+-----------+-------+-------------------+
+ci-info: +++++++++++++++++++Route IPv6 info+++++++++++++++++++
+ci-info: +-------+-------------+---------+-----------+-------+
+ci-info: | Route | Destination | Gateway | Interface | Flags |
+ci-info: +-------+-------------+---------+-----------+-------+
+ci-info: +-------+-------------+---------+-----------+-------+
+Cloud-init v. 25.2 running 'modules:config' at Fri, 20 Feb 2026 12:07:39 +0000. Up 19.18 seconds.
+Cloud-init v. 25.2 running 'modules:final' at Fri, 20 Feb 2026 12:07:40 +0000. Up 19.71 seconds.
+2026-02-20 12:07:40,313 - modules.py[WARNING]: Could not find module named cc_netplan_nm_patch (searched ['cc_netplan_nm_patch', 'cloudinit.config.cc_netplan_nm_patch'])
+Cloud-init v. 25.2 finished at Fri, 20 Feb 2026 12:07:40 +0000. Datasource DataSourceNoCloud [seed=ds_config_seedfrom,file:///boot/firmware].  Up 19.84 seconds
+Cloud-init v. 25.2 running 'init-local' at Mon, 23 Feb 2026 15:54:56 +0000. Up 7.15 seconds.
+Cloud-init v. 25.2 running 'init' at Mon, 23 Feb 2026 15:54:56 +0000. Up 7.52 seconds.
+ci-info: +++++++++++++++++++++++++++Net device info++++++++++++++++++++++++++++
+ci-info: +--------+-------+-----------+-----------+-------+-------------------+
+ci-info: | Device |   Up  |  Address  |    Mask   | Scope |     Hw-Address    |
+ci-info: +--------+-------+-----------+-----------+-------+-------------------+
+ci-info: |  eth0  | False |     .     |     .     |   .   | d8:3a:dd:39:2b:b7 |
+ci-info: |   lo   |  True | 127.0.0.1 | 255.0.0.0 |  host |         .         |
+ci-info: |   lo   |  True |  ::1/128  |     .     |  host |         .         |
+ci-info: | wlan0  | False |     .     |     .     |   .   | d8:3a:dd:39:2b:b9 |
+ci-info: +--------+-------+-----------+-----------+-------+-------------------+
+ci-info: +++++++++++++++++++Route IPv6 info+++++++++++++++++++
+ci-info: +-------+-------------+---------+-----------+-------+
+ci-info: | Route | Destination | Gateway | Interface | Flags |
+ci-info: +-------+-------------+---------+-----------+-------+
+ci-info: +-------+-------------+---------+-----------+-------+
+Cloud-init v. 25.2 running 'modules:config' at Mon, 23 Feb 2026 15:55:08 +0000. Up 19.16 seconds.
+Cloud-init v. 25.2 running 'modules:final' at Mon, 23 Feb 2026 15:55:09 +0000. Up 19.67 seconds.
+2026-02-23 15:55:09,215 - modules.py[WARNING]: Could not find module named cc_netplan_nm_patch (searched ['cc_netplan_nm_patch', 'cloudinit.config.cc_netplan_nm_patch'])
+Cloud-init v. 25.2 finished at Mon, 23 Feb 2026 15:55:09 +0000. Datasource DataSourceNoCloud [seed=ds_config_seedfrom,file:///boot/firmware].  Up 19.81 seconds
+Cloud-init v. 25.2 running 'init-local' at Mon, 23 Feb 2026 16:19:45 +0000. Up 6.99 seconds.
+Cloud-init v. 25.2 running 'init' at Mon, 23 Feb 2026 16:19:45 +0000. Up 7.37 seconds.
+ci-info: +++++++++++++++++++++++++++Net device info++++++++++++++++++++++++++++
+ci-info: +--------+-------+-----------+-----------+-------+-------------------+
+ci-info: | Device |   Up  |  Address  |    Mask   | Scope |     Hw-Address    |
+ci-info: +--------+-------+-----------+-----------+-------+-------------------+
+ci-info: |  eth0  | False |     .     |     .     |   .   | d8:3a:dd:39:2b:b7 |
+ci-info: |   lo   |  True | 127.0.0.1 | 255.0.0.0 |  host |         .         |
+ci-info: |   lo   |  True |  ::1/128  |     .     |  host |         .         |
+ci-info: | wlan0  | False |     .     |     .     |   .   | d8:3a:dd:39:2b:b9 |
+ci-info: +--------+-------+-----------+-----------+-------+-------------------+
+ci-info: +++++++++++++++++++Route IPv6 info+++++++++++++++++++
+ci-info: +-------+-------------+---------+-----------+-------+
+ci-info: | Route | Destination | Gateway | Interface | Flags |
+ci-info: +-------+-------------+---------+-----------+-------+
+ci-info: +-------+-------------+---------+-----------+-------+
+Cloud-init v. 25.2 running 'modules:config' at Mon, 23 Feb 2026 16:19:57 +0000. Up 19.07 seconds.
+Cloud-init v. 25.2 running 'modules:final' at Mon, 23 Feb 2026 16:19:57 +0000. Up 19.63 seconds.
+2026-02-23 16:19:57,970 - modules.py[WARNING]: Could not find module named cc_netplan_nm_patch (searched ['cc_netplan_nm_patch', 'cloudinit.config.cc_netplan_nm_patch'])
+Cloud-init v. 25.2 finished at Mon, 23 Feb 2026 16:19:58 +0000. Datasource DataSourceNoCloud [seed=ds_config_seedfrom,file:///boot/firmware].  Up 19.77 seconds
+Cloud-init v. 25.2 running 'init-local' at Wed, 25 Feb 2026 19:41:42 +0000. Up 8.69 seconds.
+Cloud-init v. 25.2 running 'init' at Wed, 25 Feb 2026 19:41:42 +0000. Up 9.14 seconds.
+ci-info: +++++++++++++++++++++++++++Net device info++++++++++++++++++++++++++++
+ci-info: +--------+-------+-----------+-----------+-------+-------------------+
+ci-info: | Device |   Up  |  Address  |    Mask   | Scope |     Hw-Address    |
+ci-info: +--------+-------+-----------+-----------+-------+-------------------+
+ci-info: |  eth0  | False |     .     |     .     |   .   | d8:3a:dd:39:2b:b7 |
+ci-info: |   lo   |  True | 127.0.0.1 | 255.0.0.0 |  host |         .         |
+ci-info: |   lo   |  True |  ::1/128  |     .     |  host |         .         |
+ci-info: | wlan0  | False |     .     |     .     |   .   | d8:3a:dd:39:2b:b9 |
+ci-info: +--------+-------+-----------+-----------+-------+-------------------+
+ci-info: +++++++++++++++++++Route IPv6 info+++++++++++++++++++
+ci-info: +-------+-------------+---------+-----------+-------+
+ci-info: | Route | Destination | Gateway | Interface | Flags |
+ci-info: +-------+-------------+---------+-----------+-------+
+ci-info: +-------+-------------+---------+-----------+-------+
+Cloud-init v. 25.2 running 'modules:config' at Wed, 25 Feb 2026 19:41:54 +0000. Up 21.13 seconds.
+Cloud-init v. 25.2 running 'modules:final' at Wed, 25 Feb 2026 19:42:03 +0000. Up 30.15 seconds.
+2026-02-25 19:42:03,620 - modules.py[WARNING]: Could not find module named cc_netplan_nm_patch (searched ['cc_netplan_nm_patch', 'cloudinit.config.cc_netplan_nm_patch'])
+Cloud-init v. 25.2 finished at Wed, 25 Feb 2026 19:42:03 +0000. Datasource DataSourceNoCloud [seed=ds_config_seedfrom,file:///boot/firmware].  Up 30.34 seconds
+Cloud-init v. 25.2 running 'init-local' at Wed, 25 Feb 2026 20:29:38 +0000. Up 7.64 seconds.
+Cloud-init v. 25.2 running 'init' at Wed, 25 Feb 2026 20:29:38 +0000. Up 8.04 seconds.
+ci-info: +++++++++++++++++++++++++++Net device info++++++++++++++++++++++++++++
+ci-info: +--------+-------+-----------+-----------+-------+-------------------+
+ci-info: | Device |   Up  |  Address  |    Mask   | Scope |     Hw-Address    |
+ci-info: +--------+-------+-----------+-----------+-------+-------------------+
+ci-info: |  eth0  | False |     .     |     .     |   .   | d8:3a:dd:39:2b:b7 |
+ci-info: |   lo   |  True | 127.0.0.1 | 255.0.0.0 |  host |         .         |
+ci-info: |   lo   |  True |  ::1/128  |     .     |  host |         .         |
+ci-info: | wlan0  | False |     .     |     .     |   .   | d8:3a:dd:39:2b:b9 |
+ci-info: +--------+-------+-----------+-----------+-------+-------------------+
+ci-info: +++++++++++++++++++Route IPv6 info+++++++++++++++++++
+ci-info: +-------+-------------+---------+-----------+-------+
+ci-info: | Route | Destination | Gateway | Interface | Flags |
+ci-info: +-------+-------------+---------+-----------+-------+
+ci-info: +-------+-------------+---------+-----------+-------+
+Cloud-init v. 25.2 running 'modules:config' at Wed, 25 Feb 2026 20:29:50 +0000. Up 19.88 seconds.
+Cloud-init v. 25.2 running 'modules:final' at Wed, 25 Feb 2026 20:29:59 +0000. Up 28.91 seconds.
+2026-02-25 20:29:59,484 - modules.py[WARNING]: Could not find module named cc_netplan_nm_patch (searched ['cc_netplan_nm_patch', 'cloudinit.config.cc_netplan_nm_patch'])
+Cloud-init v. 25.2 finished at Wed, 25 Feb 2026 20:29:59 +0000. Datasource DataSourceNoCloud [seed=ds_config_seedfrom,file:///boot/firmware].  Up 29.08 seconds
+Cloud-init v. 25.2 running 'init-local' at Wed, 25 Feb 2026 20:31:53 +0000. Up 7.79 seconds.
+Cloud-init v. 25.2 running 'init' at Wed, 25 Feb 2026 20:31:54 +0000. Up 8.17 seconds.
+ci-info: +++++++++++++++++++++++++++Net device info++++++++++++++++++++++++++++
+ci-info: +--------+-------+-----------+-----------+-------+-------------------+
+ci-info: | Device |   Up  |  Address  |    Mask   | Scope |     Hw-Address    |
+ci-info: +--------+-------+-----------+-----------+-------+-------------------+
+ci-info: |  eth0  | False |     .     |     .     |   .   | d8:3a:dd:39:2b:b7 |
+ci-info: |   lo   |  True | 127.0.0.1 | 255.0.0.0 |  host |         .         |
+ci-info: |   lo   |  True |  ::1/128  |     .     |  host |         .         |
+ci-info: | wlan0  | False |     .     |     .     |   .   | d8:3a:dd:39:2b:b9 |
+ci-info: +--------+-------+-----------+-----------+-------+-------------------+
+ci-info: +++++++++++++++++++Route IPv6 info+++++++++++++++++++
+ci-info: +-------+-------------+---------+-----------+-------+
+ci-info: | Route | Destination | Gateway | Interface | Flags |
+ci-info: +-------+-------------+---------+-----------+-------+
+ci-info: +-------+-------------+---------+-----------+-------+
+Cloud-init v. 25.2 running 'modules:config' at Wed, 25 Feb 2026 20:32:05 +0000. Up 19.83 seconds.
+Cloud-init v. 25.2 running 'modules:final' at Wed, 25 Feb 2026 20:32:14 +0000. Up 28.36 seconds.
+2026-02-25 20:32:14,550 - modules.py[WARNING]: Could not find module named cc_netplan_nm_patch (searched ['cc_netplan_nm_patch', 'cloudinit.config.cc_netplan_nm_patch'])
+Cloud-init v. 25.2 finished at Wed, 25 Feb 2026 20:32:14 +0000. Datasource DataSourceNoCloud [seed=ds_config_seedfrom,file:///boot/firmware].  Up 28.53 seconds
+Cloud-init v. 25.2 running 'init-local' at Wed, 25 Feb 2026 21:04:42 +0000. Up 6.87 seconds.
+Cloud-init v. 25.2 running 'init' at Wed, 25 Feb 2026 21:04:42 +0000. Up 7.27 seconds.
+ci-info: +++++++++++++++++++++++++++Net device info++++++++++++++++++++++++++++
+ci-info: +--------+-------+-----------+-----------+-------+-------------------+
+ci-info: | Device |   Up  |  Address  |    Mask   | Scope |     Hw-Address    |
+ci-info: +--------+-------+-----------+-----------+-------+-------------------+
+ci-info: |  eth0  | False |     .     |     .     |   .   | d8:3a:dd:39:2b:b7 |
+ci-info: |   lo   |  True | 127.0.0.1 | 255.0.0.0 |  host |         .         |
+ci-info: |   lo   |  True |  ::1/128  |     .     |  host |         .         |
+ci-info: | wlan0  | False |     .     |     .     |   .   | d8:3a:dd:39:2b:b9 |
+ci-info: +--------+-------+-----------+-----------+-------+-------------------+
+ci-info: +++++++++++++++++++Route IPv6 info+++++++++++++++++++
+ci-info: +-------+-------------+---------+-----------+-------+
+ci-info: | Route | Destination | Gateway | Interface | Flags |
+ci-info: +-------+-------------+---------+-----------+-------+
+ci-info: +-------+-------------+---------+-----------+-------+
+Cloud-init v. 25.2 running 'modules:config' at Wed, 25 Feb 2026 21:04:54 +0000. Up 19.10 seconds.
+Cloud-init v. 25.2 running 'modules:final' at Wed, 25 Feb 2026 21:05:01 +0000. Up 25.99 seconds.
+2026-02-25 21:05:01,255 - modules.py[WARNING]: Could not find module named cc_netplan_nm_patch (searched ['cc_netplan_nm_patch', 'cloudinit.config.cc_netplan_nm_patch'])
+Cloud-init v. 25.2 finished at Wed, 25 Feb 2026 21:05:01 +0000. Datasource DataSourceNoCloud [seed=ds_config_seedfrom,file:///boot/firmware].  Up 26.11 seconds
+Cloud-init v. 25.2 running 'init-local' at Fri, 27 Feb 2026 10:14:04 +0000. Up 6.95 seconds.
+Cloud-init v. 25.2 running 'init' at Fri, 27 Feb 2026 10:14:04 +0000. Up 7.33 seconds.
+ci-info: +++++++++++++++++++++++++++Net device info++++++++++++++++++++++++++++
+ci-info: +--------+-------+-----------+-----------+-------+-------------------+
+ci-info: | Device |   Up  |  Address  |    Mask   | Scope |     Hw-Address    |
+ci-info: +--------+-------+-----------+-----------+-------+-------------------+
+ci-info: |  eth0  | False |     .     |     .     |   .   | d8:3a:dd:39:2b:b7 |
+ci-info: |   lo   |  True | 127.0.0.1 | 255.0.0.0 |  host |         .         |
+ci-info: |   lo   |  True |  ::1/128  |     .     |  host |         .         |
+ci-info: | wlan0  | False |     .     |     .     |   .   | d8:3a:dd:39:2b:b9 |
+ci-info: +--------+-------+-----------+-----------+-------+-------------------+
+ci-info: +++++++++++++++++++Route IPv6 info+++++++++++++++++++
+ci-info: +-------+-------------+---------+-----------+-------+
+ci-info: | Route | Destination | Gateway | Interface | Flags |
+ci-info: +-------+-------------+---------+-----------+-------+
+ci-info: +-------+-------------+---------+-----------+-------+
+Cloud-init v. 25.2 running 'modules:config' at Fri, 27 Feb 2026 10:14:14 +0000. Up 16.92 seconds.
+Cloud-init v. 25.2 running 'modules:final' at Fri, 27 Feb 2026 10:14:22 +0000. Up 24.65 seconds.
+2026-02-27 10:14:22,124 - modules.py[WARNING]: Could not find module named cc_netplan_nm_patch (searched ['cc_netplan_nm_patch', 'cloudinit.config.cc_netplan_nm_patch'])
+Cloud-init v. 25.2 finished at Fri, 27 Feb 2026 10:14:22 +0000. Datasource DataSourceNoCloud [seed=ds_config_seedfrom,file:///boot/firmware].  Up 24.77 seconds
+Cloud-init v. 25.2 running 'init-local' at Fri, 27 Feb 2026 10:43:08 +0000. Up 6.82 seconds.
+Cloud-init v. 25.2 running 'init' at Fri, 27 Feb 2026 10:43:09 +0000. Up 7.21 seconds.
+ci-info: +++++++++++++++++++++++++++Net device info++++++++++++++++++++++++++++
+ci-info: +--------+-------+-----------+-----------+-------+-------------------+
+ci-info: | Device |   Up  |  Address  |    Mask   | Scope |     Hw-Address    |
+ci-info: +--------+-------+-----------+-----------+-------+-------------------+
+ci-info: |  eth0  | False |     .     |     .     |   .   | d8:3a:dd:39:2b:b7 |
+ci-info: |   lo   |  True | 127.0.0.1 | 255.0.0.0 |  host |         .         |
+ci-info: |   lo   |  True |  ::1/128  |     .     |  host |         .         |
+ci-info: | wlan0  | False |     .     |     .     |   .   | d8:3a:dd:39:2b:b9 |
+ci-info: +--------+-------+-----------+-----------+-------+-------------------+
+ci-info: +++++++++++++++++++Route IPv6 info+++++++++++++++++++
+ci-info: +-------+-------------+---------+-----------+-------+
+ci-info: | Route | Destination | Gateway | Interface | Flags |
+ci-info: +-------+-------------+---------+-----------+-------+
+ci-info: +-------+-------------+---------+-----------+-------+
+Cloud-init v. 25.2 running 'modules:config' at Fri, 27 Feb 2026 10:43:30 +0000. Up 28.05 seconds.
+Cloud-init v. 25.2 running 'modules:final' at Fri, 27 Feb 2026 10:43:37 +0000. Up 35.08 seconds.
+2026-02-27 10:43:37,134 - modules.py[WARNING]: Could not find module named cc_netplan_nm_patch (searched ['cc_netplan_nm_patch', 'cloudinit.config.cc_netplan_nm_patch'])
+Cloud-init v. 25.2 finished at Fri, 27 Feb 2026 10:43:37 +0000. Datasource DataSourceNoCloud [seed=ds_config_seedfrom,file:///boot/firmware].  Up 35.20 seconds

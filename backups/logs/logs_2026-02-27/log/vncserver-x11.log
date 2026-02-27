@@ -1,0 +1,35 @@
+RealVNC(R) Server 7.13.1 (r57) ARMv8-A (Dec 6 2024 18:49:25)
+Copyright (C) RealVNC Ltd.
+RealVNC and VNC are trademarks of RealVNC Ltd and are protected by trademark
+registrations and/or pending trademark applications in the European Union,
+United States of America and other jurisdictions.
+Protected by UK patent 2481870; US patent 8760366; EU patent 2652951.
+See https://www.realvnc.com for information on VNC.
+For third party acknowledgements see:
+https://www.realvnc.com/docs/7/foss.html
+OS: Debian GNU/Linux 13, Linux 6.12.47+rpt, aarch64
+<14> 2026-01-26T20:47:42.313Z PI-C37-P2 vncserver-x11[1157]: LogDestMem: Start replaying stored messages
+<14> 2026-01-26T20:47:42.313Z PI-C37-P2 vncserver-x11[1157]: Localize: Locales en_GB:en_US
+<14> 2026-01-26T20:47:42.313Z PI-C37-P2 vncserver-x11[1157]: JoinMgr: Getting CloudConfig.pkg from built-in resource
+<14> 2026-01-26T20:47:42.313Z PI-C37-P2 vncserver-x11[1157]: JoinMgr: Using business identifier 7c092183-a9ec-4dfc-9837-ce1a063cd649
+<14> 2026-01-26T20:47:42.313Z PI-C37-P2 vncserver-x11[1157]: Licensing: Using online license token 0, changed 0
+<14> 2026-01-26T20:47:42.313Z PI-C37-P2 vncserver-x11[1157]: Licensing: Using default license: Raspberry Pi Edition
+<14> 2026-01-26T20:47:42.313Z PI-C37-P2 vncserver-x11[1157]: LogDestMem: Finished replaying stored messages
+<13> 2026-01-26T20:47:42.313Z PI-C37-P2 vncserver-x11[1157]: ServerManager: Server started
+<14> 2026-01-26T20:47:42.313Z PI-C37-P2 vncserver-x11[1157]: Licensing: Using default license: Raspberry Pi Edition
+<14> 2026-01-26T20:47:42.314Z PI-C37-P2 vncserver-x11[1157]: SFeatureRaspberryPi: Raspberry Pi edition on Raspberry Pi 4 Model B Rev 1.5
+<14> 2026-01-26T20:47:43.407Z PI-C37-P2 vncserver-x11[1157]: TcpListenerManager: listening on [::]::5900
+<14> 2026-01-26T20:47:43.407Z PI-C37-P2 vncserver-x11[1157]: TcpListenerManager: listening on 0.0.0.0::5900
+<14> 2026-01-26T20:47:43.407Z PI-C37-P2 vncserver-x11[1157]: Licensing: Using default license: Raspberry Pi Edition
+<14> 2026-01-26T20:47:43.408Z PI-C37-P2 vncserver-x11[1157]: Localize: No OS support for locale "en_US"
+<14> 2026-01-26T20:47:43.409Z PI-C37-P2 vncserver-x11[1157]: SModuleRsaKey: Using new key: 5c-6c-b4-50-61-5e-a9-40 (catchphrase "Lobster design omega. Laser oxygen Lola.")
+<14> 2026-01-26T20:47:43.428Z PI-C37-P2 vncserver-x11[1157]: getPrimaryAddress: (running /etc/vnc/get_primary_ip4) command<pid=1231> failed
+<14> 2026-01-26T20:47:43.429Z PI-C37-P2 vncserver-x11[1157]: SModuleCtrlCommsListen: listening on /tmp/.vnc-vncservice/vncserver-x11.CtrlComms
+<13> 2026-01-26T20:47:43.429Z PI-C37-P2 vncserver-x11[1157]: ConsoleDisplay: Cannot find a running X server on vt1
+<14> 2026-01-26T20:47:43.429Z PI-C37-P2 vncserver-x11[1157]: AgentMgrService: consoleDisplayChanged, running 0
+<14> 2026-01-26T20:47:43.626Z PI-C37-P2 vncserver-x11[1157]: ConsoleDisplay: Active VT changed to vt7
+<13> 2026-01-26T20:47:43.626Z PI-C37-P2 vncserver-x11[1157]: ConsoleDisplay: Cannot find a running X server on vt7
+<14> 2026-01-26T20:52:16.092Z PI-C37-P2 vncserver-x11[1157]: main: Got signal SIGTERM
+<14> 2026-01-26T20:52:16.092Z PI-C37-P2 vncserver-x11[1157]: TcpListenerManager: stopping listening on 0.0.0.0::5900
+<14> 2026-01-26T20:52:16.092Z PI-C37-P2 vncserver-x11[1157]: TcpListenerManager: stopping listening on [::]::5900
+<13> 2026-01-26T20:52:16.093Z PI-C37-P2 vncserver-x11[1157]: ServerManager: Server stopped

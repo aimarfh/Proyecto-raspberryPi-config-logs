@@ -1,0 +1,41 @@
+[+0.01s] DEBUG: Logging to /var/log/lightdm/lightdm.log
+[+0.01s] DEBUG: Starting Light Display Manager 1.32.0, UID=0 PID=1276
+[+0.01s] DEBUG: Loading configuration dirs from /usr/share/lightdm/lightdm.conf.d
+[+0.01s] DEBUG: Loading configuration from /usr/share/lightdm/lightdm.conf.d/01_debian.conf
+[+0.01s] DEBUG: Loading configuration dirs from /usr/local/share/lightdm/lightdm.conf.d
+[+0.01s] DEBUG: Loading configuration dirs from /etc/xdg/lightdm/lightdm.conf.d
+[+0.01s] DEBUG: Loading configuration from /etc/lightdm/lightdm.conf
+[+0.01s] DEBUG: Registered seat module local
+[+0.01s] DEBUG: Registered seat module xremote
+[+0.01s] DEBUG: Using D-Bus name org.freedesktop.DisplayManager
+[+0.01s] DEBUG: _g_io_module_get_default: Found default implementation local (GLocalVfs) for ‘gio-vfs’
+[+0.02s] DEBUG: Monitoring logind for seats
+[+0.02s] DEBUG: New seat added from logind: seat0
+[+0.02s] DEBUG: Seat seat0: Loading properties from config section Seat:*
+[+0.02s] DEBUG: Seat seat0 has property CanMultiSession=no
+[+0.02s] DEBUG: Seat seat0: Starting
+[+0.02s] DEBUG: Seat seat0: Creating user session
+[+0.02s] DEBUG: Loading users from org.freedesktop.Accounts
+[+0.02s] DEBUG: User /org/freedesktop/Accounts/User1001 added
+[+0.25s] DEBUG: User /org/freedesktop/Accounts/User1000 added
+[+0.27s] DEBUG: Seat seat0: Creating display server of type wayland
+[+0.27s] DEBUG: Seat seat0: Plymouth is running on VT 1, but this is less than the configured minimum of 7 so not replacing it
+[+0.27s] DEBUG: Quitting Plymouth
+[+0.30s] DEBUG: Using VT 7
+[+0.30s] DEBUG: Launching process 1296: /usr/share/dispsetup.sh
+[+0.30s] DEBUG: Process 1296 exited with return value 0
+[+0.30s] DEBUG: Seat seat0: Exit status of /usr/share/dispsetup.sh: 0
+[+0.31s] DEBUG: Seat seat0: Display server ready, starting session authentication
+[+0.31s] DEBUG: Session pid=1299: Started with service 'lightdm-autologin', username 'aimar'
+[+0.31s] DEBUG: Acquired bus name org.freedesktop.DisplayManager
+[+0.31s] DEBUG: Registering seat with bus path /org/freedesktop/DisplayManager/Seat0
+[+0.48s] DEBUG: Session pid=1299: Authentication complete with return value 0: Success
+[+0.48s] DEBUG: Seat seat0: Session authenticated, running command
+[+0.48s] DEBUG: Registering session with bus path /org/freedesktop/DisplayManager/Session0
+[+0.49s] DEBUG: Session pid=1299: Running command /etc/X11/Xsession /usr/bin/labwc-pi
+[+0.49s] DEBUG: Creating shared data directory /var/lib/lightdm/data/aimar
+[+0.49s] DEBUG: Session pid=1299: Logging to .xsession-errors
+[+1.34s] DEBUG: Activating VT 7
+[+1.34s] DEBUG: Activating login1 session 1
+[+1.36s] DEBUG: Seat seat0 changes active session to 1
+[+1.36s] DEBUG: Session 1 is already active

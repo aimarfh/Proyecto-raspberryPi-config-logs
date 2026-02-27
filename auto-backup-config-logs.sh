@@ -1,11 +1,8 @@
 #!/bin/bash
 
-bash /opt/backup_config_gdrive.sh 
-
-bash /opt/backup_logs.sh 
 
 
-
+rm -rf backups
 cp -r /backups /home/aimar/github-repo-config/
 
 
