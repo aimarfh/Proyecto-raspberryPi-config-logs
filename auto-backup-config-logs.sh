@@ -6,6 +6,9 @@ rm -rf backups
 cp -r /backups /home/aimar/github-repo-config/
 
 
+
+
+
 if [ -d "backups" ]; then
 
 	git add .
