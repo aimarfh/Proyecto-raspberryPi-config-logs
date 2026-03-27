@@ -1,0 +1,15 @@
+2026-03-20 11:51:35,980 fail2ban.server         [1132]: INFO    --------------------------------------------------
+2026-03-20 11:51:35,980 fail2ban.server         [1132]: INFO    Starting Fail2ban v1.1.0
+2026-03-20 11:51:35,981 fail2ban.observer       [1132]: INFO    Observer start...
+2026-03-20 11:51:36,033 fail2ban.database       [1132]: INFO    Connected to fail2ban persistent database '/var/lib/fail2ban/fail2ban.sqlite3'
+2026-03-20 11:51:36,035 fail2ban.jail           [1132]: INFO    Creating new jail 'sshd'
+2026-03-20 11:51:36,092 fail2ban.jail           [1132]: INFO    Jail 'sshd' uses systemd {}
+2026-03-20 11:51:36,093 fail2ban.jail           [1132]: INFO    Initiated 'systemd' backend
+2026-03-20 11:51:36,095 fail2ban.filter         [1132]: INFO      maxLines: 1
+2026-03-20 11:51:36,127 fail2ban.filtersystemd  [1132]: INFO    [sshd] Added journal match for: '_SYSTEMD_UNIT=ssh.service + _COMM=sshd'
+2026-03-20 11:51:36,128 fail2ban.filter         [1132]: INFO      maxRetry: 3
+2026-03-20 11:51:36,128 fail2ban.filter         [1132]: INFO      findtime: 600
+2026-03-20 11:51:36,128 fail2ban.actions        [1132]: INFO      banTime: 3600
+2026-03-20 11:51:36,128 fail2ban.filter         [1132]: INFO      encoding: UTF-8
+2026-03-20 11:51:36,131 fail2ban.filtersystemd  [1132]: INFO    [sshd] Jail is in operation now (process new journal entries)
+2026-03-20 11:51:36,140 fail2ban.jail           [1132]: INFO    Jail 'sshd' started

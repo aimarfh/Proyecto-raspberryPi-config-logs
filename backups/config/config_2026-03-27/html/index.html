@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Servicio VPN - PiVPN</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            background-color: #f4f6f8;
+            color: #333;
+        }
+        header {
+            background-color: #1e2a38;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        main {
+            max-width: 900px;
+            margin: auto;
+            padding: 20px;
+            background-color: white;
+        }
+        section {
+            margin-bottom: 30px;
+        }
+        h2 {
+            color: #1e2a38;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 5px;
+        }
+        code {
+            background-color: #eee;
+            padding: 4px 6px;
+            border-radius: 4px;
+            font-size: 0.95em;
+        }
+        ul {
+            margin-left: 20px;
+        }
+        footer {
+            text-align: center;
+            padding: 15px;
+            background-color: #1e2a38;
+            color: white;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Servicio VPN con PiVPN</h1>
+    <p>Acceso remoto seguro a la red del proyecto Raspberry Pi</p>
+</header>
+
+<main>
+
+<section>
+    <h2>Introducción</h2>
+    <p>
+        Este servidor ofrece un servicio de <strong>VPN (Virtual Private Network)</strong>
+        configurado mediante la herramienta <strong>PiVPN</strong>.
+        El objetivo es permitir el acceso remoto seguro a los servicios de la Raspberry Pi
+        desde redes externas.
+    </p>
+</section>
+
+<section>
+    <h2>¿Qué es PiVPN?</h2>
+    <p>
+        PiVPN es un script que simplifica la instalación y configuración de servidores VPN
+        basados en <strong>WireGuard</strong> u <strong>OpenVPN</strong> en sistemas Linux,
+        especialmente en Raspberry Pi.
+    </p>
+    <ul>
+        <li>Configuración sencilla</li>
+        <li>Alta seguridad</li>
+        <li>Gestión de usuarios mediante perfiles</li>
+    </ul>
+</section>
+
+<section>
+    <h2>Funcionamiento del servicio</h2>
+    <p>
+        El servidor VPN crea un túnel cifrado entre el cliente y la red interna.
+        Una vez conectado, el usuario puede acceder a:
+    </p>
+    <ul>
+        <li>Red local</li>
+        <li>Utilizar la IP publica del servidor VPN</li>
+        <li>Otros servicios del servidor en la red local</li>
+    </ul>
+</section>
+
+<section>
+    <h2>Instalación del cliente VPN</h2>
+    <p>
+        Para conectarse al servicio es necesario instalar un cliente compatible con
+        <strong>OpenVPN</strong>, esta es la configuración aplicada en el servicio VPN.
+    </p>
+    <ul>
+        <li>OpenVPN GUI</li>
+        <li>Linux: openvpn</li>
+        <li>Android / iOS: App OpenVPN</li>
+    </ul>
+</section>
+
+<section>
+    <h2>Configuración del cliente</h2>
+    <p>
+        Es necesario disponeir del archivo de configuración
+        (<code>.ovpn</code>) para poder acceder
+    </p>
+    <p>
+        Este archivo debe importarse en el cliente VPN.
+        Una vez importado, solo es necesario activar la conexión.
+    </p>
+</section>
+
+<section>
+    <h2>Seguridad</h2>
+    <p>
+        El servicio VPN utiliza:
+    </p>
+    <ul>
+        <li>Cifrado fuerte (OpenVPN)</li>
+        <li>Autenticación mediante claves</li>
+        <li>Firewall y control de acceso</li>
+        <li>Protección adicional con Fail2Ban</li>
+    </ul>
+</section>
+
+<section>
+    <h2>Buenas prácticas</h2>
+    <ul>
+        <li>No compartir archivos de configuración VPN</li>
+        <li>Eliminar perfiles que ya no se utilicen</li>
+        <li>Mantener el sistema actualizado</li>
+        <li>Revisar logs de conexión periódicamente</li>
+    </ul>
+</section>
+
+
+
+</main>
+
+<footer>
+    <p>Servicio VPN con Raspberry Pi y PiVPN</p>
+    <div style="display:none;"><a href="www.enlace.com">Haz clic en este enlace</a></div>
+</footer>
+
+</body>
+</html>
