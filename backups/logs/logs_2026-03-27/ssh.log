@@ -1,0 +1,6 @@
+Mar 20 11:51:34 PI-C37-P2 systemd[1]: Starting ssh.service - OpenBSD Secure Shell server...
+Mar 20 11:51:35 PI-C37-P2 sshd[1171]: Server listening on 0.0.0.0 port 22.
+Mar 20 11:51:35 PI-C37-P2 sshd[1171]: Server listening on :: port 22.
+Mar 20 11:51:35 PI-C37-P2 systemd[1]: Started ssh.service - OpenBSD Secure Shell server.
+Mar 27 10:58:10 PI-C37-P2 sshd-session[2907]: Accepted publickey for aimar from 192.168.233.127 port 41210 ssh2: ED25519 SHA256:LsO6wsqc8CFB1JADfjqT1Chb7XTVktB5mOtpzF/PQYE
+Mar 27 10:58:10 PI-C37-P2 sshd-session[2907]: pam_unix(sshd:session): session opened for user aimar(uid=1000) by aimar(uid=0)
